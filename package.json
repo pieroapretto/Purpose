@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "sass": "^1.42.1"
+  },
+  "name": "purpose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss -o webroot/css",
+    "scss:watch": "npm run scss && node-sass scss -w -o webroot/css",
+    "start": "npm run scss:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanosimboangy/Purpose.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanosimboangy/Purpose/issues"
+  },
+  "homepage": "https://github.com/Tanosimboangy/Purpose#readme",
+  "description": ""
+}
