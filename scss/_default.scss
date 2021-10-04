@@ -1,27 +1,56 @@
-body {
-  margin: 0;
-  ul {
-    padding: 0;
+html {
+  scroll-behavior: smooth;
+  body {
     margin: 0;
-    li {
-      list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+      }
     }
-  }
-  a {
-    text-decoration: none;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-  }
-  button {
-    border: none;
-    outline: none;
-    cursor: pointer;
+    a {
+      text-decoration: none;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin: 0;
+    }
+    button {
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /************************************************/
+    /************************************************/
+
+    nav {
+      white-space: nowrap;
+      ul {
+        a {
+          display: block;
+          padding: 0.5rem 1rem;
+          color: blueviolet;
+        }
+        a.current {
+          background: black;
+        }
+      }
+    }
+    /* Only stick if you can fit */
+    // @media (min-height: 300px) {
+    //   nav ul {
+    //     position: sticky;
+    //     top: 0;
+    //   }
+    // }
   }
 }

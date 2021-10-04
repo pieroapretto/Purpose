@@ -1,24 +1,39 @@
-body {
-  margin: 0; }
-  body ul {
-    padding: 0;
-    margin: 0; }
-    body ul li {
-      list-style: none; }
-  body a {
-    text-decoration: none; }
-  body h1,
-  body h2,
-  body h3,
-  body h4,
-  body h5,
-  body h6,
-  body p {
-    margin: 0; }
-  body button {
-    border: none;
-    outline: none;
-    cursor: pointer; }
+html {
+  scroll-behavior: smooth; }
+  html body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /************************************************/
+    /************************************************/
+    /* Only stick if you can fit */ }
+    html body ul {
+      padding: 0;
+      margin: 0; }
+      html body ul li {
+        list-style: none; }
+    html body a {
+      text-decoration: none; }
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6,
+    html body p {
+      margin: 0; }
+    html body button {
+      border: none;
+      outline: none;
+      cursor: pointer; }
+    html body nav {
+      white-space: nowrap; }
+      html body nav ul a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: blueviolet; }
+      html body nav ul a.current {
+        background: black; }
 
 .header {
   background: url("../images/issy1.png");
@@ -155,8 +170,33 @@ body {
     transform: rotate(-135deg);
     margin-top: -9px; }
 
-.main section {
-  padding: 24px 24px 0px 24px; }
+.courses .cards .melbourne .melbourne_feature img {
+  width: 100%; }
+
+.courses .cards .sydney .sydney_feature img {
+  width: 100%; }
+
+.main {
+  width: 100%;
+  margin: auto;
+  position: relative; }
+  .main section:not(:first-of-type) {
+    padding: 24px 24px 0px 24px; }
+    .main section:not(:first-of-type) h3 {
+      color: #f15e24;
+      font-size: 19px;
+      text-transform: uppercase; }
+
+@media (min-width: 960px) {
+  .main .section {
+    width: 66.66%;
+    margin: 0; } }
 
 .masthead {
-  padding: 0 15px; }
+  padding: 0 24px; }
+  .masthead .masthead_title {
+    color: #f15e24;
+    font-size: 32px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase; }

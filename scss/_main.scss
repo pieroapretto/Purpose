@@ -1,5 +1,22 @@
 .main {
-  section {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  section:not(:first-of-type) {
     padding: 24px 24px 0px 24px;
+    h3 {
+      color: #f15e24;
+      font-size: 19px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .main {
+    .section {
+      width: 66.66%;
+      margin: 0;
+    }
   }
 }
