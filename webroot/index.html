@@ -65,65 +65,16 @@
         </div>
       </div>
     </header> -->
-    <!-- <nav>
+    <nav>
       <ul>
-        <li><a href="#section-1">Section 1</a></li>
-        <li><a href="#section-2">Section 2</a></li>
-        <li><a href="#section-3">Section 3</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#courses">Courses</a></li>
       </ul>
     </nav>
 
-    <main>
-      <section id="section-1">
-        <h1>Section 1</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab
-          quibusdam ratione veniam in, mollitia fuga repudiandae?
-        </p>
-      </section>
-      <section id="section-2">
-        <h1>Section 2</h1>
-        <p>
-          Ratione nulla nam, ipsa dignissimos corrupti veniam nostrum,
-          laudantium asperiores sequi numquam placeat velit voluptate in
-          praesentium non labore unde incidunt laborum maxime quae magni.
-        </p>
-      </section>
-      <section id="section-3">
-        <h1>Section 3</h1>
-        <p>
-          Soluta quibusdam ad nostrum vel voluptate delectus sequi dolores quia
-          quaerat officia corrupti, aperiam fugit facere debitis repudiandae
-          praesentium sapiente inventore repellendus, nemo commodi alias!
-        </p>
-      </section>
-    </main> -->
-
     <main class="main">
-      <header class="masthead">
-        <h1 class="masthead_title">Step up</h1>
-      </header>
-      <section class="sidebar">
-        <nav>
-          <ul>
-            <li>
-              <a href="#overview" class="overview_testimonials"
-                >Program overview:</a
-              >
-            </li>
-            <li>
-              <a href="#testimonials" class="overview_testimonials"
-                >Testimonials</a
-              >
-            </li>
-            <li>
-              <a href="#courses" class="overview_courses">courses</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section class="overview">
+      <section id="overview">
         <h3 class="overview_title">Program overview:</h3>
         <p class="overview_texts">
           Young people are growing up in an increasingly complex and
@@ -150,7 +101,7 @@
           positive change in the world.
         </p>
       </section>
-      <section class="testimonials">
+      <section id="testimonials">
         <h3 class="testimonials_title">Testimonials</h3>
         <p>
           My favorite program was going to the market and doing the $2
@@ -164,7 +115,7 @@
           Philanthropy.
         </p>
       </section>
-      <section class="courses">
+      <section id="courses">
         <div class="courses_header">
           <h3 class="title">Courses</h3>
           <p class="texts">
@@ -221,14 +172,17 @@
       </section>
     </main>
     <script>
-      let mainNavLinks = document.querySelectorAll('main nav ul li a')
+      let mainNavLinks = document.querySelectorAll('nav ul li a')
       let mainSections = document.querySelectorAll('main section')
+
       let lastId
       let cur = []
       window.addEventListener('scroll', (event) => {
         let fromTop = window.scrollY
+
         mainNavLinks.forEach((link) => {
           let section = document.querySelector(link.hash)
+
           if (
             section.offsetTop <= fromTop &&
             section.offsetTop + section.offsetHeight > fromTop
@@ -242,3 +196,25 @@
     </script>
   </body>
 </html>
+
+<!-- <main class="main">
+      <header class="masthead">
+        <h1 class="masthead_title">Step up</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#overview" class="overview_testimonials"
+              >Program overview:</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials" class="overview_testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li><a href="#courses" class="overview_courses">courses</a></li>
+        </ul>
+      </nav>
+      
+    </main> -->

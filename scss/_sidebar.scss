@@ -1,10 +1,9 @@
 .sidebar {
-  nav {
-    ul {
-      li {
-        a {
-        }
-      }
-    }
+  display: none;
+}
+@media (min-width: 1024px) {
+  .sidebar {
+    display: block;
+    position: relative;
   }
 }

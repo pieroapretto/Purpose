@@ -144,12 +144,6 @@
   input[type='checkbox']:checked
     ~ .navigation_header
     > .sidebarIconToggle
-    > .spinner {
-    background: black;
-  }
-  input[type='checkbox']:checked
-    ~ .navigation_header
-    > .sidebarIconToggle
     > .diagonal.part-1 {
     transition: all 0.5s;
     box-sizing: border-box;
