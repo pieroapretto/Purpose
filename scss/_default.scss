@@ -6,6 +6,11 @@ body {
   display: grid;
   grid-template-columns: min-content 1fr;
   font-family: system-ui, sans-serif;
+  main {
+    section {
+      padding: 100px 20px;
+    }
+  }
 }
 header {
   grid-column: 1 / 3;
@@ -25,37 +30,44 @@ nav {
     position: sticky;
     top: 50%;
     li {
-      padding: 10px 0;
       a {
-        color: white;
+        display: block;
         text-decoration: none;
+        position: relative;
+        color: white;
+        padding: 10px;
+        margin: 10px 0;
       }
-      a:hover,
-      a:active,
-      a:focus {
-        margin-left: 70px;
-        transition: all 0.2s linear;
-        background-color: #1d1e21;
+      a::before {
         content: '';
         display: block;
         position: absolute;
         left: 0;
         top: 50%;
-        height: 1px;
-        background: #fff;
-        transition: all 0.2s linear;
-        -webkit-transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
-      }
-      a.current {
-        margin-left: 70px;
-        position: relative;
-        content: '';
-        display: block;
         width: 1px;
         height: 1px;
         background: #fff;
         transition: all 0.2s linear;
+      }
+      a:hover,
+      a:active,
+      a:focus {
+        display: block;
+        margin-left: 100px;
+        transition: all 1s ease;
+      }
+      a:hover::before,
+      a:active::before,
+      a:focus::before {
+        width: 75px;
+        height: 2px;
+        background-color: #1d1e21;
+      }
+      a.current {
+        display: block;
+        margin-left: 100px !important;
+        transition: all 1s ease;
+        background-color: #0000004a;
       }
       a.current::before {
         content: '';
@@ -63,11 +75,10 @@ nav {
         position: absolute;
         left: 0;
         top: 50%;
+        width: 1px;
         height: 1px;
         background: #fff;
         transition: all 0.2s linear;
-        -webkit-transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
       }
     }
   }
