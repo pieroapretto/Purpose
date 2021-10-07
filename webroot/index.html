@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <img
         src="./images/StandUp-primary.png"
         alt="StandUp-primary"
@@ -64,7 +64,7 @@
         </nav>
         </div>
       </div>
-    </header> -->
+    </header>
     <nav>
       <ul>
         <li><a href="#overview">Overview</a></li>
@@ -174,15 +174,10 @@
     <script>
       let mainNavLinks = document.querySelectorAll('nav ul li a')
       let mainSections = document.querySelectorAll('main section')
-
-      let lastId
-      let cur = []
       window.addEventListener('scroll', (event) => {
         let fromTop = window.scrollY
-
         mainNavLinks.forEach((link) => {
           let section = document.querySelector(link.hash)
-
           if (
             section.offsetTop <= fromTop &&
             section.offsetTop + section.offsetHeight > fromTop
