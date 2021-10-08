@@ -9,9 +9,13 @@
   }
   .cards {
     .melbourne {
+      position: relative;
       .melbourne_feature {
         img {
           width: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0;
         }
       }
       .melbourne_head {
@@ -22,9 +26,14 @@
       }
     }
     .sydney {
+      display: none;
+      position: relative;
       .sydney_feature {
         img {
           width: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0;
         }
       }
       .sydney_head {
