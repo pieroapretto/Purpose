@@ -25,10 +25,11 @@ header {
   text-align: center;
 }
 nav {
-  white-space: nowrap;
-  position: sticky;
-  top: 50%;
+  width: 80%;
+  margin: 0;
   ul {
+    position: sticky;
+    top: 50%;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -40,18 +41,22 @@ nav {
         text-decoration: none;
         position: relative;
         color: black;
+        white-space: nowrap;
         padding: 10px 10px 10px 80px;
+        margin-bottom: 10px;
       }
       a:hover,
       a:active,
       a:focus {
         display: block;
         margin-left: 20px;
+        font-weight: bolder;
         transition: all 1s ease;
         background-color: #8c8c8c4a;
       }
       a.current {
         display: block;
+        font-weight: bolder;
         transition: all 1s ease;
         background-color: #8c8c8c4a;
         margin-left: 20px !important;

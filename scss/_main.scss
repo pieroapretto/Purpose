@@ -48,51 +48,58 @@
 //   padding: 2rem;
 //   margin: 0 0 2rem 0;
 // }
-// // .main {
-// //   nav {
-// //     white-space: nowrap;
-// //     ul {
-// //       position: sticky;
-// //       top: 0;
-// //       li {
-// //         padding: 16px ​0 0 0;
-// //         a {
-// //           display: block;
-// //           color: black;
-// //         }
-// //         a.current:before {
-// //           background: black;
-// //           font-weight: bolder;
-// //           content: '';
-// //           display: block;
-// //           position: absolute;
-// //           left: 0;
-// //           top: 50%;
-// //           width: 1px;
-// //           height: 1px;
-// //           background: #fff;
-// //           transition: all 0.2s linear;
-// //         }
-// //       }
-// //     }
-// //   }
-// //   section {
-// //     padding: 24px 24px 0px 24px;
-// //     h3 {
-// //       color: #f15e24;
-// //       font-size: 19px;
-// //       text-transform: uppercase;
-// //     }
-// //   }
-// // }
+.main {
+  nav {
+    white-space: nowrap;
+    ul {
+      position: sticky;
+      top: 0;
+      li {
+        padding: 16px ​0 0 0;
+        a {
+          display: block;
+          color: black;
+        }
+        a.current:before {
+          background: black;
+          font-weight: bolder;
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 1px;
+          height: 1px;
+          background: #fff;
+          transition: all 0.2s linear;
+        }
+      }
+    }
+  }
+  section {
+    padding: 24px 24px 0px 24px;
+    h3 {
+      color: #f15e24;
+      font-size: 19px;
+      text-transform: uppercase;
+    }
+  }
+}
 
-// // @media (min-width: 960px) {
-// //   .main {
-// //     section {
-// //       position: relative;
-// //       width: 66.66%;
-// //       margin-left: auto;
-// //       margin-right: 0;
-// //     }
-// //   }
-// // }
+@media (min-width: 960px) {
+  .main {
+    section {
+      position: relative;
+      width: 66.66%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}
+@media (min-width: 1140px) {
+  .main {
+    section {
+      width: 92%;
+    }
+  }
+}
