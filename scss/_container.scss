@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  section {
+    .wrapper {
+      article {
+        padding: 100px 100px 100px 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    section {
+      .wrapper {
+        width: 66.66%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media (min-width: 1140px) {
+  .container {
+    display: grid;
+    grid-template-columns: 41.6% 58.3%;
+  }
+}
