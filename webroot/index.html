@@ -6,6 +6,9 @@
     <title>Purposes</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
+  <!-- <div class="masthead">
+    <h1 class="masthead_title">Step up</h1>
+  </div> -->
   <body>
     <header class="header">
       <img
@@ -39,7 +42,7 @@
                 </ul>
               </li>
               <li>
-                <ul>
+                <li>
                     <li><a href="/surge_forward">SURGE FORWARD</a></li>
                     <li><a href="/our_work">OUR WORK</a></li>
                     <li><a href="/about">ABOUT</a></li>
@@ -77,9 +80,6 @@
           </nav>
         </section>
         <section class="wrapper">
-          <div class="masthead">
-            <h1 class="masthead_title">Step up</h1>
-          </div>
           <article id="overview">
             <h3 class="overview_title">Program overview:</h3>
             <p class="overview_texts">
@@ -187,7 +187,7 @@
         'main div.container section.sidebar nav ul li a'
       )
       let mainSections = document.querySelectorAll(
-        'main div.container section.wrapper article'
+        'main div.container section.wrapper article.card'
       )
       window.addEventListener('scroll', (event) => {
         let fromTop = window.scrollY
