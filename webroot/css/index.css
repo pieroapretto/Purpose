@@ -155,52 +155,51 @@ html {
 #courses .cards .melbourne {
   position: relative; }
   #courses .cards .melbourne .melbourne_feature img {
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0; }
+    width: 100%; }
 
 #courses .cards .sydney {
-  display: none;
   position: relative; }
   #courses .cards .sydney .sydney_feature img {
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0; }
+    width: 100%; }
 
 .container {
-  position: relative; }
-  .container .wrapper {
-    padding: 30px; }
-    .container .wrapper article h3 {
-      color: #f15e24;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      font-size: calc(19px + 8 * ((100vw - 420px) / 480)); }
-    .container .wrapper article p {
-      margin-top: 0;
-      margin-bottom: 16px;
-      font-size: calc(14px + 4 * ((100vw - 420px) / 480)); }
+  padding-right: 15px;
+  padding-left: 15px; }
+  .container .frame {
+    position: relative; }
+    .container .frame .wrapper {
+      padding: 30px; }
+      .container .frame .wrapper article h3 {
+        color: #f15e24;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: calc(19px + 8 * ((100vw - 420px) / 480)); }
+      .container .frame .wrapper article p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-size: calc(14px + 4 * ((100vw - 420px) / 480)); }
 
 @media (min-width: 960px) {
-  .container .wrapper {
-    width: 66.66667%;
-    margin-left: auto;
-    margin-right: 0;
-    padding: 30px 0 0 0; }
-    .container .wrapper article {
-      padding: 0 30px 0 30px; } }
+  .container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto; }
+    .container .frame .wrapper {
+      width: 66.66667%;
+      margin-left: auto;
+      margin-right: 0;
+      padding: 30px 0 0 0; } }
 
 @media (min-width: 1140px) {
-  .container {
+  .container .frame {
     display: grid;
     grid-template-columns: 41.6% 58.3%; }
-    .container .wrapper {
-      width: 96%;
-      margin: 0; } }
+    .container .frame .wrapper {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto; } }
 
-.container .wrapper .masthead .masthead_title {
+.masthead .masthead_title {
   color: #f15e24;
   font-size: calc(32px + 14 * ((100vw - 420px) / 480));
   padding-bottom: 20px;
@@ -208,43 +207,51 @@ html {
   text-transform: uppercase; }
 
 @media (min-width: 960px) {
-  .container .wrapper .masthead .masthead_title {
+  .masthead .masthead_title {
     padding-left: 30px; } }
 
 @media (min-width: 1024px) {
-  .container .wrapper .masthead .masthead_title {
+  .masthead .masthead_title {
     font-size: 32px; } }
 
-.sidebar {
+.container .sidebar {
   display: none; }
 
 @media (min-width: 1140px) {
-  .sidebar {
+  .container .sidebar {
     display: block; }
-    .sidebar nav {
+    .container .sidebar nav {
       top: 50%;
       margin: 0;
       width: 80%;
       position: sticky; }
-      .sidebar nav ul {
+      .container .sidebar nav ul {
         display: flex;
         flex-direction: column; }
-        .sidebar nav ul li a {
+        .container .sidebar nav ul li a {
+          font-size: 20px;
           display: block;
           position: relative;
-          color: black;
           white-space: nowrap;
           padding: 10px 10px 10px 80px;
           margin-bottom: 10px; }
-        .sidebar nav ul li a:hover,
-        .sidebar nav ul li a:active,
-        .sidebar nav ul li a:focus {
+        .container .sidebar nav ul li a:hover,
+        .container .sidebar nav ul li a:focus,
+        .container .sidebar nav ul li a.current {
           display: block;
-          margin-left: 20px;
+          margin-left: 26px;
+          color: black;
           font-weight: bolder;
-          transition: all 1s ease; }
-        .sidebar nav ul li a.current {
+          transition: all 1.5s ease; }
+        .container .sidebar nav ul li a:hover:before,
+        .container .sidebar nav ul li a:focus:before,
+        .container .sidebar nav ul li a.current::before {
+          content: '';
           display: block;
-          font-weight: bolder;
-          transition: all 1s ease;
-          margin-left: 20px !important; } }
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 75px;
+          height: 1px;
+          background: black;
+          transition: all 1.5s ease; } }
