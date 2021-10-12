@@ -7,6 +7,8 @@ html {
       margin: 0; }
       html body ul li {
         list-style: none; }
+    html body i {
+      font-style: normal; }
     html body a {
       text-decoration: none; }
     html body h1,
