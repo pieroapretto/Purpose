@@ -21,17 +21,28 @@
               display: block;
               position: relative;
               white-space: nowrap;
-              padding: 10px 10px 10px 80px;
+              padding: 10px 10px 10px 0;
               margin-bottom: 10px;
+            }
+            a {
+              span {
+                margin-left: 80px;
+              }
             }
             a:hover,
             a:focus,
             a.current {
               display: block;
-              margin-left: 26px;
               color: black;
               font-weight: bolder;
-              transition: all 1.5s ease;
+              transition: all 1s ease;
+            }
+            a:hover,
+            a.current {
+              span {
+                margin-left: 100px;
+                transition: all 1s ease;
+              }
             }
             a:hover:before,
             a:focus:before,
@@ -44,7 +55,7 @@
               width: 75px;
               height: 1px;
               background: black;
-              transition: all 1.5s ease;
+              transition: all 1s ease;
             }
           }
         }

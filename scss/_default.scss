@@ -1,7 +1,16 @@
 html {
   scroll-behavior: smooth;
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
   body {
     margin: 0;
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
     ul {
       padding: 0;
       margin: 0;
