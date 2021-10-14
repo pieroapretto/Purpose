@@ -32,7 +32,6 @@
             a:hover,
             a:focus,
             a.current {
-              display: block;
               color: black;
               font-weight: bolder;
               transition: all 1s ease;
@@ -48,7 +47,6 @@
             a:focus:before,
             a.current::before {
               content: '';
-              display: block;
               position: absolute;
               left: 0;
               top: 50%;

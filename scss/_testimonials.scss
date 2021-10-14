@@ -1,0 +1,31 @@
+#testimonials {
+  .tetimonials_title {
+  }
+  blockquote {
+    width: 90%;
+    margin: 0 5%;
+  }
+  blockquote:first-of-type {
+    font-size: 110%;
+    font-style: italic;
+    text-align: justify;
+    margin-bottom: 16px;
+    .tetimonials_primary--text {
+    }
+  }
+  blockquote:last-of-type {
+    .testimonials_gandel--logo {
+      display: block;
+      width: 150px;
+      height: 176px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+      // aspect-ratio: auto 150 / 176;
+    }
+    .testimonials_secondary--text {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+}

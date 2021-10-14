@@ -160,39 +160,50 @@ html {
     transform: rotate(-135deg);
     margin-top: -9px; }
 
+#courses .cards aside a img {
+  width: 100%; }
+
 #courses .cards .melbourne {
   position: relative; }
-  #courses .cards .melbourne .melbourne_feature img {
-    width: 90%; }
 
 #courses .cards .sydney {
   position: relative; }
-  #courses .cards .sydney .sydney_feature img {
-    width: 90%; }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-top: 60px;
   box-sizing: border-box; }
   .container .frame {
     position: relative; }
-    .container .frame .wrapper {
-      padding: 30px; }
-      .container .frame .wrapper article {
-        padding: 100px 0px 0px 0px; }
-        .container .frame .wrapper article h3 {
-          color: #f15e24;
-          margin-bottom: 10px;
-          text-transform: uppercase;
-          font-size: calc(19px + 8 * ((100vw - 420px) / 480)); }
-        .container .frame .wrapper article p {
-          margin-top: 0;
-          margin-bottom: 16px;
-          font-size: calc(14px + 4 * ((100vw - 420px) / 480)); }
+    .container .frame .wrapper article {
+      padding: 0 30px 60px 30px; }
+      .container .frame .wrapper article h3 {
+        color: #f15e24;
+        text-transform: uppercase;
+        position: relative;
+        display: block;
+        font-size: calc(19px + 8 * ((100vw - 420px) / 480));
+        line-height: 70px;
+        letter-spacing: 0;
+        margin-bottom: 30px;
+        position: relative; }
+        .container .frame .wrapper article h3 i {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0.08;
+          font-size: 100px;
+          font-style: normal;
+          color: #1d1e21;
+          letter-spacing: 0; }
+      .container .frame .wrapper article h3:not(:first-of-type) {
+        padding-left: 50px; }
+      .container .frame .wrapper article p {
+        margin-top: 0;
+        font-size: calc(14px + 4 * ((100vw - 420px) / 480)); }
 
 @media (min-width: 960px) {
   .container {
-    width: 90%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: 0px;
@@ -200,8 +211,7 @@ html {
     .container .frame .wrapper {
       width: 66.66667%;
       margin-left: auto;
-      margin-right: 0;
-      padding: 30px 30px 0 30px; } }
+      margin-right: 0; } }
 
 @media (min-width: 1140px) {
   .container {
@@ -216,20 +226,43 @@ html {
         margin-right: auto;
         margin-left: auto; } }
 
-.masthead .masthead_title {
-  color: #f15e24;
-  font-size: calc(32px + 14 * ((100vw - 420px) / 480));
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-  text-transform: uppercase; }
-
-@media (min-width: 960px) {
-  .masthead .masthead_title {
-    padding-left: 30px; } }
+.primary_wrapper {
+  padding: 0px 30px; }
+  .primary_wrapper .primary_title {
+    color: #f15e24;
+    font-size: calc(32px + 14 * ((100vw - 420px) / 480));
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
 
 @media (min-width: 1024px) {
-  .masthead .masthead_title {
+  .primary_wrapper .primary_title {
     font-size: 32px; } }
+
+#overview .overview_texts {
+  margin-bottom: 20px; }
+
+#testimonials blockquote {
+  width: 90%;
+  margin: 0 5%; }
+
+#testimonials blockquote:first-of-type {
+  font-size: 110%;
+  font-style: italic;
+  text-align: justify;
+  margin-bottom: 16px; }
+
+#testimonials blockquote:last-of-type .testimonials_gandel--logo {
+  display: block;
+  width: 150px;
+  height: 176px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px; }
+
+#testimonials blockquote:last-of-type .testimonials_secondary--text {
+  text-align: center;
+  margin-bottom: 16px; }
 
 .container .sidebar {
   display: none; }
@@ -257,7 +290,6 @@ html {
         .container .sidebar nav ul li a:hover,
         .container .sidebar nav ul li a:focus,
         .container .sidebar nav ul li a.current {
-          display: block;
           color: black;
           font-weight: bolder;
           transition: all 1s ease; }
@@ -269,7 +301,6 @@ html {
         .container .sidebar nav ul li a:focus:before,
         .container .sidebar nav ul li a.current::before {
           content: '';
-          display: block;
           position: absolute;
           left: 0;
           top: 50%;

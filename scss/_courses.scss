@@ -8,11 +8,17 @@
     }
   }
   .cards {
+    aside {
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
     .melbourne {
       position: relative;
       .melbourne_feature {
         img {
-          width: 90%;
         }
       }
       .melbourne_head {
@@ -26,7 +32,6 @@
       position: relative;
       .sydney_feature {
         img {
-          width: 90%;
         }
       }
       .sydney_head {
