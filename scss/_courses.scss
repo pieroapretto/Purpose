@@ -1,10 +1,39 @@
 #courses {
   .courses_header {
+    padding-bottom: 30px;
     .title {
     }
     .texts {
+      margin-bottom: 16px;
+      span {
+        a {
+          outline: none;
+          color: #F15E24;
+          text-decoration: none;
+          position: relative;
+          vertical-align: bottom;
+          font-weight: 500;
+          border-bottom: 1px solid #F15E24;
+          transition: background-color 0.3s,border-color 0.3s;
+        }
+      }
     }
     .btn {
+      padding: 8px 0;
+      i {
+
+      }
+      a {
+        display: inline-block;
+        padding: 4px 3px;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 4px;
+      }
     }
   }
   .cards {

@@ -160,6 +160,32 @@ html {
     transform: rotate(-135deg);
     margin-top: -9px; }
 
+#courses .courses_header {
+  padding-bottom: 30px; }
+  #courses .courses_header .texts {
+    margin-bottom: 16px; }
+    #courses .courses_header .texts span a {
+      outline: none;
+      color: #F15E24;
+      text-decoration: none;
+      position: relative;
+      vertical-align: bottom;
+      font-weight: 500;
+      border-bottom: 1px solid #F15E24;
+      transition: background-color 0.3s,border-color 0.3s; }
+  #courses .courses_header .btn {
+    padding: 8px 0; }
+    #courses .courses_header .btn a {
+      display: inline-block;
+      padding: 4px 3px;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 4px; }
+
 #courses .cards aside a img {
   width: 100%; }
 
