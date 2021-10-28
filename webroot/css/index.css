@@ -161,7 +161,9 @@ html {
     margin-top: -9px; }
 
 #courses .courses_header {
-  padding-bottom: 30px; }
+  padding: 0px 30px;
+  width: 58.3333%;
+  margin-left: auto; }
   #courses .courses_header .texts {
     margin-bottom: 16px; }
     #courses .courses_header .texts span a {
@@ -186,13 +188,18 @@ html {
       vertical-align: baseline;
       border-radius: 4px; }
 
-#courses .cards aside a img {
-  width: 100%; }
+#courses aside {
+  padding: 0px 30px;
+  width: 58.3333%;
+  margin-left: auto; }
 
-#courses .cards .melbourne {
+#courses .img a img {
+  width: -webkit-fill-available; }
+
+#courses .melbourne {
   position: relative; }
 
-#courses .cards .sydney {
+#courses .sydney {
   position: relative; }
 
 .container {
@@ -200,32 +207,34 @@ html {
   box-sizing: border-box; }
   .container .frame {
     position: relative; }
-    .container .frame .wrapper article {
-      padding: 0 30px 60px 30px; }
-      .container .frame .wrapper article h3 {
-        color: #f15e24;
-        text-transform: uppercase;
-        position: relative;
-        display: block;
-        font-size: calc(19px + 8 * ((100vw - 420px) / 480));
-        line-height: 70px;
-        letter-spacing: 0;
-        margin-bottom: 30px;
-        position: relative; }
-        .container .frame .wrapper article h3 i {
-          position: absolute;
-          top: 0;
-          left: 0;
-          opacity: 0.08;
-          font-size: 100px;
-          font-style: normal;
-          color: #1d1e21;
-          letter-spacing: 0; }
-      .container .frame .wrapper article h3:not(:first-of-type) {
-        padding-left: 50px; }
-      .container .frame .wrapper article p {
-        margin-top: 0;
-        font-size: calc(14px + 4 * ((100vw - 420px) / 480)); }
+    .container .frame .wrapper article h3 {
+      color: #f15e24;
+      text-transform: uppercase;
+      position: relative;
+      display: block;
+      font-size: calc(19px + 8 * ((100vw - 420px) / 480));
+      line-height: 70px;
+      letter-spacing: 0;
+      margin-bottom: 60px;
+      position: relative; }
+      .container .frame .wrapper article h3 i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.08;
+        font-size: 100px;
+        font-style: normal;
+        color: #1d1e21;
+        letter-spacing: 0; }
+    .container .frame .wrapper article h3:not(:first-of-type) {
+      padding-left: 50px; }
+    .container .frame .wrapper article p {
+      margin-top: 0;
+      font-size: calc(14px + 4 * ((100vw - 420px) / 480)); }
+    .container .frame .wrapper article:not(:last-of-type) {
+      padding: 60px 0px 60px 0px; }
+      .container .frame .wrapper article:not(:last-of-type) div {
+        padding: 0px 30px 0px 30px; }
 
 @media (min-width: 960px) {
   .container {
@@ -234,23 +243,15 @@ html {
     margin-left: auto;
     padding-right: 0px;
     padding-left: 0px; }
-    .container .frame .wrapper {
-      width: 66.66667%;
-      margin-left: auto;
-      margin-right: 0; } }
+    .container .frame .wrapper article:not(:last-of-type) {
+      width: 58.3333%;
+      margin-left: auto; } }
 
 @media (min-width: 1140px) {
   .container {
     width: 100%;
     margin-right: auto;
-    margin-left: auto; }
-    .container .frame {
-      display: grid;
-      grid-template-columns: 41.6% 58.3%; }
-      .container .frame .wrapper {
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto; } }
+    margin-left: auto; } }
 
 .primary_wrapper {
   padding: 0px 30px; }

@@ -1,6 +1,8 @@
 #courses {
   .courses_header {
-    padding-bottom: 30px;
+    padding: 0px 30px;
+    width: 58.3333%;
+    margin-left: auto;
     .title {
     }
     .texts {
@@ -36,39 +38,35 @@
       }
     }
   }
-  .cards {
-    aside {
-      a {
-        img {
-          width: 100%;
-        }
+  aside {
+    padding: 0px 30px;
+    width: 58.3333%;
+    margin-left: auto;
+  }
+  .img {
+    a {
+      img {
+        width: -webkit-fill-available;
       }
     }
-    .melbourne {
-      position: relative;
-      .melbourne_feature {
-        img {
-        }
-      }
-      .melbourne_head {
-      }
-      .melbourne_texts {
-      }
-      .melbourne_btn {
-      }
+
+  }
+  .melbourne {
+    position: relative;
+    .melbourne_head {
     }
-    .sydney {
-      position: relative;
-      .sydney_feature {
-        img {
-        }
-      }
-      .sydney_head {
-      }
-      .sydney_texts {
-      }
-      .sydney_btn {
-      }
+    .melbourne_texts {
+    }
+    .melbourne_btn {
+    }
+  }
+  .sydney {
+    position: relative;
+    .sydney_head {
+    }
+    .sydney_texts {
+    }
+    .sydney_btn {
     }
   }
 }
