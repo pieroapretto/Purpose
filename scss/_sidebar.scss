@@ -7,11 +7,11 @@
   .container {
     .sidebar {
       display: block;
+      top: 50%;
+      position: sticky;
       nav {
-        top: 50%;
         margin: 0;
         width: 80%;
-        position: sticky;
         ul {
           display: flex;
           flex-direction: column;

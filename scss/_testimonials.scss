@@ -1,31 +1,34 @@
 #testimonials {
   .tetimonials_title {
   }
-  blockquote {
-    width: 90%;
-    margin: 0 5%;
-  }
-  blockquote:first-of-type {
-    font-size: 110%;
-    font-style: italic;
-    text-align: justify;
-    margin-bottom: 16px;
-    .tetimonials_primary--text {
+  .testimonials_wrapper {
+    blockquote {
+      width: 90%;
+      margin: 0 5%;
+      .testimonials_primary--text {
+        font-size: 110%;
+        font-style: italic;
+        text-align: justify;
+        margin-bottom: 45px;
+      }
+      .testimonials_secondary--text {
+        color: #00aab3;
+        margin-bottom:8px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: calc(19px + 8 * ((100vw - 420px) / 480));
+      }
     }
-  }
-  blockquote:last-of-type {
     .testimonials_gandel--logo {
       display: block;
-      width: 150px;
-      height: 176px;
+      max-width: 463px;
+      max-height: 226px;
+      width: 100%;
+      height: auto;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 16px;
-      // aspect-ratio: auto 150 / 176;
     }
-    .testimonials_secondary--text {
-      text-align: center;
-      margin-bottom: 16px;
-    }
+
   }
 }
