@@ -3,7 +3,7 @@
     display: none;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1008px) {
   .container {
     .sidebar {
       display: block;
@@ -11,7 +11,7 @@
       position: sticky;
       nav {
         margin: 0;
-        width: 80%;
+        width: 45%;
         ul {
           display: flex;
           flex-direction: column;

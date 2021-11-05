@@ -30,6 +30,10 @@ html {
       outline: none;
       cursor: pointer; }
 
+@font-face {
+  font-family: "aktiv-grotesk";
+  src: local(aktiv-grotesk), url(../webroot/fonts/AktivGroteskCorp_Light.woff2) format("woff2"), url(../webroot/fonts/AktivGroteskCorp_Light.woff) format("woff"); }
+
 .header {
   background: url("../images/issy1.png");
   background-size: 100%;
@@ -161,11 +165,10 @@ html {
     margin-top: -9px; }
 
 #courses .courses_header {
-  padding: 0px 30px;
-  width: 58.3333%;
-  margin-left: auto; }
+  padding: 0px 30px; }
   #courses .courses_header .texts {
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    font-family: aktiv-grotesk, Roboto, "Helvetica Neue", Arial, sans-serif; }
     #courses .courses_header .texts span a {
       outline: none;
       color: #F15E24;
@@ -189,9 +192,39 @@ html {
       border-radius: 4px; }
 
 #courses aside {
-  padding: 0px 30px;
-  width: 58.3333%;
-  margin-left: auto; }
+  padding: 60px 30px; }
+  #courses aside h5 {
+    color: #f15e24;
+    text-transform: uppercase;
+    display: block;
+    font-size: 23px;
+    line-height: 70px;
+    letter-spacing: 0;
+    margin-bottom: 16px; }
+  #courses aside p {
+    margin-bottom: 30px;
+    color: #212529;
+    text-align: left;
+    visibility: visible;
+    font-size: calc(14px + 4 * ( (100vw - 420px) / 480));
+    font-family: aktiv-grotesk, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400; }
+  #courses aside a {
+    text-transform: uppercase;
+    padding: .6rem 1.2rem;
+    color: #212529;
+    cursor: pointer;
+    border-color: #EAEAEA;
+    background-color: #EAEAEA;
+    font-size: 1rem;
+    white-space: normal;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    line-height: 1.5;
+    border-radius: .25rem; }
 
 #courses .img a img {
   width: -webkit-fill-available; }
@@ -201,6 +234,15 @@ html {
 
 #courses .sydney {
   position: relative; }
+
+@media (min-width: 960px) {
+  #courses .courses_header {
+    width: 58.3333%;
+    margin-left: auto;
+    padding: 0px 30px; }
+  #courses aside {
+    width: 58.3333%;
+    margin-left: auto; } }
 
 .container {
   padding-top: 60px;
@@ -230,7 +272,8 @@ html {
       padding-left: 50px; }
     .container .frame .wrapper article p {
       margin-top: 0;
-      font-size: calc(14px + 4 * ((100vw - 420px) / 480)); }
+      font-size: calc(14px + 4 * ((100vw - 420px) / 480));
+      font-family: aktiv-grotesk, Roboto, "Helvetica Neue", Arial, sans-serif; }
     .container .frame .wrapper article:not(:last-of-type) {
       padding: 60px 0px 60px 0px; }
       .container .frame .wrapper article:not(:last-of-type) div {
@@ -299,14 +342,14 @@ html {
 .container .sidebar {
   display: none; }
 
-@media (min-width: 1140px) {
+@media (min-width: 1008px) {
   .container .sidebar {
     display: block;
     top: 50%;
     position: sticky; }
     .container .sidebar nav {
       margin: 0;
-      width: 80%; }
+      width: 45%; }
       .container .sidebar nav ul {
         display: flex;
         flex-direction: column; }

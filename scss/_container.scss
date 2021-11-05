@@ -24,9 +24,6 @@
             font-style: normal;
             color: #1d1e21;
             letter-spacing: 0;
-            // left: -70px;
-            // font-size: 150px;
-            // line-height: 115px;
           }
         }
         h3:not(:first-of-type) {
@@ -34,8 +31,8 @@
         }
         p {
           margin-top: 0;
-          // margin-bottom: 30px;
           font-size: calc(14px + 4 * ((100vw - 420px) / 480));
+          font-family: aktiv-grotesk, Roboto, "Helvetica Neue", Arial, sans-serif;
         }
       }
       article:not(:last-of-type) {
@@ -71,14 +68,5 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    // .frame {
-    //   display: grid;
-    //   grid-template-columns: 41.6% 58.3%;
-    //   .wrapper {
-    //     width: 100%;
-    //     margin-right: auto;
-    //     margin-left: auto;
-    //   }
-    // }
   }
 }

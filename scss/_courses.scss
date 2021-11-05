@@ -1,12 +1,11 @@
 #courses {
   .courses_header {
     padding: 0px 30px;
-    width: 58.3333%;
-    margin-left: auto;
     .title {
     }
     .texts {
       margin-bottom: 16px;
+      font-family: aktiv-grotesk, Roboto, "Helvetica Neue", Arial, sans-serif;
       span {
         a {
           outline: none;
@@ -39,9 +38,43 @@
     }
   }
   aside {
-    padding: 0px 30px;
-    width: 58.3333%;
-    margin-left: auto;
+    padding: 60px 30px;
+    h5 {
+      color: #f15e24;
+      text-transform: uppercase;
+      display: block;
+      font-size: 23px;
+      line-height: 70px;
+      letter-spacing: 0;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 30px;
+      // line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      visibility: visible;
+      font-size: calc(14px + 4 * ( (100vw - 420px) / 480));
+      font-family: aktiv-grotesk, Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 400;
+    }
+    a {
+      text-transform: uppercase;
+      padding: .6rem 1.2rem;
+      color: #212529;
+      cursor: pointer;
+      border-color: #EAEAEA;
+      background-color: #EAEAEA;
+      font-size: 1rem;
+      white-space: normal;
+      font-weight: 400;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      user-select: none;
+      line-height: 1.5;
+      border-radius: .25rem;
+    }
   }
   .img {
     a {
@@ -67,6 +100,20 @@
     .sydney_texts {
     }
     .sydney_btn {
+    }
+  }
+}
+
+@media(min-width: 960px) {
+  #courses {
+    .courses_header {
+      width: 58.3333%;
+      margin-left: auto;
+      padding: 0px 30px;
+    }  
+    aside {
+      width: 58.3333%;
+      margin-left: auto;
     }
   }
 }
