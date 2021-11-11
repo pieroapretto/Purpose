@@ -227,11 +227,7 @@ html {
     border-radius: .25rem; }
 
 #courses .img a img {
-  width: -webkit-fill-available; 
-  position: relative;
-  z-index: 3;
-  object-fit: cover;
-  max-height: 645px; }
+  width: -webkit-fill-available; }
 
 #courses .melbourne {
   position: relative; }
@@ -350,8 +346,7 @@ html {
   .container .sidebar {
     display: block;
     top: 50%;
-    position: sticky; 
-    z-index: 2; }
+    position: sticky; }
     .container .sidebar nav {
       margin: 0;
       width: 45%; }
